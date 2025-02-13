@@ -10,7 +10,7 @@ load_dotenv()
 
 if __name__ == "__main__":
 
-    container_name = "containertestx"
+    container_name = os.getenv("CONTAINER_NAME")
 
     # Paths for your test file to upload and download
     local_file_path_to_upload = os.path.join(
